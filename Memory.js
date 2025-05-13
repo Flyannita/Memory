@@ -16,7 +16,7 @@ async function EntranceINliders(){
     entrance = document.getElementById("liders")
     exit.style.display = "none"
     entrance.style.display = "flex"
-    https = "http://127.0.0.1:5000/Liders"
+    https = "https://memoryserver-7a61.onrender.com/Liders"
     get_responce = await fetch(https)
     data = await get_responce.json()
     console.log(data.liders)
@@ -40,7 +40,7 @@ async function EntranceINliders(){
 async function BlockLevel(){
     user = localStorage.getItem("Name")
     console.log(user)
-    https = "http://127.0.0.1:5000/GetUserData?Name=" + user
+    https = "https://memoryserver-7a61.onrender.com/GetUserData?Name=" + user
     get_responce = await fetch(https)
     data = await get_responce.json()
     two = document.getElementById("Two")
@@ -96,7 +96,7 @@ async function EntranceINLevel(numlevel){
         hearts.appendChild(span)
     }}
     localStorage.setItem("level", numlevel)
-    https = "http://127.0.0.1:5000/getImg?NumLevel=" + numlevel
+    https = "https://memoryserver-7a61.onrender.com/getImg?NumLevel=" + numlevel
     get_responce = await fetch(https)
     data = await get_responce.json()
     if (get_responce){
@@ -296,7 +296,7 @@ async function SaveResult(){
             localStorage.setItem("Name", Input.value)
         }
         console.log(LastName, User)
-        https = https = "http://127.0.0.1:5000/SavePoints" 
+        https = https = "https://memoryserver-7a61.onrender.com/SavePoints" 
         post_response = await fetch(https, {
         method:"POST",
         body: JSON.stringify({"NewName": User,
