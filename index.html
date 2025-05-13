@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>
+    Memory
+</title>
+<link  rel="stylesheet" href="Memory.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=favorite" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="start">
+    <h1>
+        Memory game
+    </h1>
+    <div id="levels">
+        <button class="purple" onclick="EntranceINLevel(1)">Первый уровень</button>
+        <button class="purple" onclick="EntranceINLevel(2)" id="Two">Второй уровень</button>
+        <button class="purple" onclick="EntranceINLevel(3)" id="Three">Третий уровень</button>
+    </div>
+<button class="standart" onclick="EntranceINrule('start')"> Правила игры</button>
+<button class="standart" onclick="Tutorial()"> Обучение</button>
+<button class="standart" onclick="EntranceINliders()"> Таблица Лидеров</button>
+</div>
+<div id="game" class="DontSEE">
+<div id="dark" class="DontSEE"></div>
+    <h1>
+        Memory game
+    </h1>
+<div id="liveHeart"></div>
+<div id="beauty"><div id="fieldGame"></div></div>
+
+<button class="standart" onclick="Reset()">Обновить</button>
+<button class="standart" onclick="ExitTOmenu()">Меню</button>
+<button class="standart" onclick="EntranceINrule('game')">Правила игры</button>
+</div>
+<div id="win" class="DontSEE">
+    <span class="x" onclick="CloseWindow()" id="X">&times;</span>
+    <h2>
+        Молодец, <span id="NameUser"></span> вы выиграли япи
+    </h2>
+    <p> вы набрали <span id="points"></span> очков</p>
+    <div id="nameSet"></div>
+<button class="standart" onclick="ChangeName()" id="Change">поменять имя</button>
+<button class="standart" onclick="SaveResult()">Сохранить результат</button>
+</div>
+<div id="liders" class="DontSEE">
+    <h1>
+        Таблица Лидеров
+    </h1>
+<div id="lidersTable">
+    <div class="LidersRow Header"><div class="LidersColumn">Ник</div><div class="LidersColumn">Очки</div></div>
+</div>
+<button class="standart Nise" onclick="ExitFromLiders()">Меню</button>
+</div>
+
+<div id="rule" class="DontSEE">
+    <h1>Правила</h1>
+    <div id="justBeauty"><p>
+        Игра начинается со всех карт, 
+        которые лежат рубашкой вверх,
+    <br><br>
+        и игроки по очереди переворачивают две карты. 
+        Если на двух картах одинаковая картинка,
+        <br><br>
+        то они оставляют карты себе, в противном случае 
+        они снова переворачивают карты рубашкой вверх. 
+    <br><br>
+    Победителем становится тот, у кого больше всего карт,
+        когда все карты будут разобраны.</p>
+</div>
+<button onclick="ExitFromRule()" class="standart">обратно</button></div>
+<script src="Memory.js"> </script>
+</body>
+</html>

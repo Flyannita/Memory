@@ -1,0 +1,232 @@
+.DontSEE{
+    display: none;
+}
+
+#game{
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+body{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #221833;
+}
+
+button{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    color:#DCCADF;
+    font-size: 30px;
+}
+
+#start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#levels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.purple{
+    color: #E6E4ED;
+    background-color:#f93bc4;
+    border-color: #f93bc4;
+    padding: 4px 9px;
+}
+
+.purple:hover {
+    background-color: #ff0077;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+
+.standart{
+    background-color: #E6E4ED;
+    border-color: #E6E4ED;
+}
+.standart:hover {
+    background-color: #ffd6ff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+
+#fieldGame{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+
+.RowCard{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+
+}
+
+
+.smallCards{
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.flipCard{
+    transform: rotateY(360deg) ;
+}
+
+#win{
+    width: 50%;
+    position: fixed;
+    top: 150px;
+    left: 25%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    z-index: 994;
+    box-shadow: 0 3px 15px rgb(37, 22, 44);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#dark{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#X{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px; 
+    width: 27px;
+    height: 27px;
+    text-align: center;
+}
+
+#X:hover{
+    background-color: #f93bc4;
+    color:#E6E4ED;
+}
+
+
+.inputPharameters{
+    cursor: pointer;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#f93bc4;
+    text-align: center;
+}
+
+
+.DIVlearn{
+    width: 400px;
+    height:fit-content;
+    left: 40px;
+    top: 100px;
+    background-color: #E6E4ED;
+    box-shadow: 10px 5px 50px rgb(190, 173, 209);
+    position: absolute;
+    z-index: 993;
+    padding: 10px;
+}
+
+
+#rule{
+    flex-direction: column;
+    align-items: center;
+    color: #DCCADF;
+}
+
+
+.blockedButton{
+    color: black;
+    background-color: gray;
+    pointer-events: none;
+}
+
+#justBeauty{
+    background-color: #8d6682;
+    border-radius: 10px;
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#beauty{
+    background-color: #f93bc4;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+p{
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+
+.heart{
+    color:#ff008c;
+    font-size: 24px;   
+}
+
+#liders{
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+
+#lidersTable{
+    background-color: #f93bc4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.LidersRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.Header{
+    font-weight: bold;
+    font-size: 22px ;
+    margin-bottom: 10px;
+}
+
+.Nise{
+    margin: 80px;
+}
